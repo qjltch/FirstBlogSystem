@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h1 class="page-title">{{post.title}}</h1>
+    <article class="post post-{{post.pk}}">
+        <div class="entry-content clearfix">
+            <figure class="img-responsive-center">
+                <!--<img class="img-responsive" src="img/me.jpg" alt="Developer Image">-->
+            </figure>
+            <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+            <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+            <div class="height-40px"></div>
+            <h2 class="title text-center">Social</h2>
+            <ul class="social">
+                <li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
+                <li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
+                <li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
+                <li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
+            </ul>
+        </div>
+    </article>
+{% endblock main %}
+{% block toc %}
+    <div class="widget widget-content">
+        <h3 class="widget-title">文章目录</h3>
+        <ul>
+            <li>
+                <a href="#">教程特点</a>
+            </li>
+            <li>
+                <a href="#">谁适合这个教程</a>
+            </li>
+            <li>
+                <a href="#">在线预览</a>
+            </li>
+            <li>
+                <a href="#">资源列表</a>
+            </li>
+            <li>
+                <a href="#">获取帮助</a>
+            </li>
+        </ul>
+    </div>
+
+{% endblock toc %}

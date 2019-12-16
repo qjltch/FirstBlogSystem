@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
 # Create your models here.
 class Category(models.Model):
     name=models.CharField(max_length=100)
@@ -30,6 +31,8 @@ class Post(models.Model):
         super().save(*args,**kwargs)
     def __str__(self):
         return self.title
+    def get_absolute_url(self):
+        return reverse('blog:detail',kwargs={'pk':self.pk})
     class Meta:
         verbose_name='文章'
         verbose_name_plural=verbose_name
